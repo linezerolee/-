@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+h2.line {
+    position : relative;
+}
+h2.line:after{
+    content : '';
+    position : absolute;
+    background : #000;
+    bottom : -30px;
+    left : 50%;
+    transform: translateX(-50%);
+    width : 10%;
+    height : 3px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+
+.btn-danger {
+    background : #f60;
+    border-color : #f60;
+}
+.btn-danger:hover {
+    background : #f60;
+    border-color : #f60;
+}
+
+.btn-outline-danger {
+    border-color : #f60;
+    color : #f60;
+}
+.btn-outline-danger:hover {
+    background : #f60;
+    border-color : #f60;
+}
+
+.orange {
+    color : #f60;
+}
+
+/* carousel */
+.carousel {
+    margin-bottom: 4rem;
+}
+.carousel-caption {
+bottom: 3rem;
+z-index: 10;
+}
+
+.carousel-item {
+min-height: 32rem;
+}
+.carousel-item > img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 32rem;
+}
+
+.slide01.carousel-item {
+    min-height: 20rem;
+}
+
+.slide01.carousel-item > img {
+    min-height: 20rem;
+ }
+
+.p-4.mb-3 {
+    position : relative;
+}
+
+.list-unstyled li a{
+
+    display: inline-block;
+    color: #000;
+    size: 15px;
+    overflow: hidden;
+    max-width: 360px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+h4 + span {
+    position : absolute;
+    width : 30px;
+    height : 30px;
+    right : 40px;
+    top : 23px;
+    background-color : #000;
+    background-image: url('../img/main/btn_more.png');
+    background-repeat: no-repeat;
+    background-size : cover;
+    cursor: pointer;
+}
+
+/* campaign */
+.portfolio-item a{
+    position : relative;
+    display: block;
+} 
+
+.portfolio-item img {
+   height : 220px;
+}
+
+.portfolio-hover{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 102, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+.portfolio-hover:hover {
+    opacity: 1;
+}
+
+small{
+    line-height : 22px;
+}
+
+/* subpage word */
+
+.word .subbanner {
+    background : url('../img/subpage/subbanner.jpg') center top;
+    background-repeat: no-repeat;
+    background-size : cover;
+    min-height : 320px;
+}
+
+.word .subbanner_text h1{
+    font-size : 32px;
+}
+
+.word .subbanner_text p{
+    font-size : 18px;
+    line-height: 20px;
+}
+
+.word .col-md-2 ol li  {
+    width : 160px;
+    height : 30px;
+    padding-bottom : 10px;
+    margin-bottom : 5px;
+    border-bottom : 1px solid #d9d9d9;
+    
+}
+.word .col-md-2 ol li a  {
+    padding-left : 5px;
+    width : 160px;
+    height : 30px;
+}
+.word .col-md-2 ol li a.active  {
+    color : #f60;
+}
+.word .col-md-2 ol li a:hover  {
+    color : #f60;
+    text-decoration: none;
+}
+.word .row {
+    justify-content: center;
+}
+
+.word .card {
+    min-height : 530px;
+}
+
+.manifesto {
+    position : relative;
+    width : 100%;
+    min-height : 300px;
+    border-bottom : 1px solid #f60;
+    margin : 40px 0;
+}
+
+.manifesto:after {
+    content : '';
+    position : absolute;
+    display: block;
+    width : 100%;
+    height : 60px;
+    top : 0;
+    background : url('../img/subpage/vision_line.svg') center top;
+    background-size : cover;
+    background-repeat: no-repeat;
+    margin-top : -30px;
+}
+
+.word .m-manifesto{
+    width : 100%;
+}
+.word .line-box .line {
+    min-height : 220px;
+    position: relative;
+    height: 220px;
+    box-sizing: border-box;
+    border: 1px solid #ff6600;
+    border-radius: 10px;
+    padding: 25px 27px;
+    margin-bottom: 23px;
+}
+
+.line span {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: inline-block;
+    width: 68px;
+    height: 65px;
+}
+.line strong {
+    font-size : 20px;
+    position : absolute;
+    bottom : 20px;
+}
+/*  */
+@media (max-width: 768px) {
+    h1,h2 {
+        font-size :28px;
+    }
+    .carousel-item {
+    min-height: 28rem;
+    }
+
+    .carousel-item > img {
+    min-height: 28rem;
+    }
+    .portfolio-item img {
+        height : auto;
+     }
+
+     footer img.f_banner {
+         width : 175px;
+         height : 85px;
+     }
+     .word .subbanner {
+        background : url('../img/subpage/subbanner_m.jpg') right center;
+    }
+
+}
+@media (max-width: 575.98px) {
+    h1,h2,h4 {
+        font-size :20px;
+    }
+    .list-unstyled li a{
+        max-width: 300px;
+    }
+
+    .carousel-caption .btn {
+        width : 120px;
+        height: 40px;
+        font-size : 16px;
+    } 
+    
+}
